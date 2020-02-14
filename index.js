@@ -45,7 +45,6 @@ console.log("Function rangeOfNumbers: " + rangeOfNumbers(4, 4));
 
 // TODO: Repeat the exercises using: ternary operator, higer order functions like 'splice(0,0,n)', '[].concat(n-1)', '[n, ...function()]'
 
-
 // ## ES6
 
 // - Use Destructuring Assignment to Assign to Extract Values from Objects:
