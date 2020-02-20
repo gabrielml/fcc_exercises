@@ -60,7 +60,7 @@ const {nameUser, ageUser} = user; // (!) nameUser and ageUser => undefined ???
 
 // - Promise:
 const makeServerRequest = new Promise((resolve, reject) => {
-    let responseFromServer = false;
+    let responseFromServer = true;
 
     if(responseFromServer){
         resolve("We got the data");
@@ -76,3 +76,39 @@ makeServerRequest.then(result =>{
 makeServerRequest.catch(error =>{
     console.log(error);
 });
+
+// ## Intermediate Algorithm Scripting.
+// 6/21 Pig Latin:
+function translatePigLatin(str){
+    // Variables:
+    let regEx = /([aeiou])/i; // () matched results are included in the array. Use in split() method.
+    let vowelPosition;
+    let suffixOne = "ay";
+    let suffixTwo = "way";
+    let finalStr = "";
+
+    // Find vowel position:
+    vowelPosition = str.search(regEx);
+    // Case a: If word not contain vowel = str + "ay":
+    if (vowelPosition === -1){
+        return str.concat(suffixOne);
+    } else if(vowelPosition === 0){
+        return str.concat(suffixTwo);
+    } else {
+        let splitWord = str.split(regEx)
+        for (let index = 1; index < splitWord.length; index++) {
+            finalStr += splitWord[index];
+        }
+        finalStr += splitWord[0] + suffixOne;
+        return finalStr;
+    }
+}
+
+translatePigLatin("consonant");
+translatePigLatin("california");
+translatePigLatin("paragraphs");
+translatePigLatin("glove");
+translatePigLatin("algorithm");
+translatePigLatin("eight");
+console.log(translatePigLatin("schwartz"));
+console.log(translatePigLatin("rhythm"));
