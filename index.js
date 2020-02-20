@@ -112,3 +112,24 @@ translatePigLatin("algorithm");
 translatePigLatin("eight");
 console.log(translatePigLatin("schwartz"));
 console.log(translatePigLatin("rhythm"));
+
+
+// 7/21 Search and Replace:
+function myReplace(str, before, after) {
+    let regEx = /^[A-Z]/;
+
+    if(before.search(regEx) === 0 && after.search(regEx) === -1){
+        after = after.replace(/^\w/, firstLetter => firstLetter.toUpperCase());
+    }
+    return str.replace(before, after);
+}
+
+console.log("1: " + myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+console.log("2: " + myReplace("Let us go to the store", "store", "male"));
+console.log("3: " + myReplace("He is Sleeping on the couch", "Sleeping", "sitting"));
+console.log("4: " + myReplace("This has a spellngi error", "spellngi", "spelling"));
+console.log("5: " + myReplace("His name is Tom", "Tom", "john"));
+console.log("6: " + myReplace("Let us get back to more Coding", "Coding", "algorithms"));
+
+
+
