@@ -131,5 +131,45 @@ console.log("4: " + myReplace("This has a spellngi error", "spellngi", "spelling
 console.log("5: " + myReplace("His name is Tom", "Tom", "john"));
 console.log("6: " + myReplace("Let us get back to more Coding", "Coding", "algorithms"));
 
+// 8/21 DNA Pairing
+console.log("\n *** 8/21 DNA Pairing *** \n");
 
+function pairElement(str) {
+    // Variables:
+    let originalStrand = [];
+    let pairingStrand = [];
+    let dnaStrand = [];
+
+    // 1. Turn a String into an array of strings:
+    originalStrand = str.split('');
+
+    // 2. Create pairingStrand Array:
+    for (let i = 0; i < originalStrand.length; i++) {
+        switch (originalStrand[i]) {
+            case 'G':
+                pairingStrand.push("C");
+                break;
+            case 'C':
+                pairingStrand.push("G");
+                break;
+            case 'A':
+                pairingStrand.push("T");
+                break;
+            case 'T':
+                pairingStrand.push("A");
+                break;
+            default:
+                console.log(`Sorry, there is no pairing element for ${originalStrand[i]}`);
+                break;
+        }
+    }
+    // 3. Create the definitive dnaStrand
+    for (let index = 0; index < originalStrand.length; index++) {
+        dnaStrand.push([originalStrand[index], pairingStrand[index]]);
+    }
+
+    return dnaStrand;
+}
+
+pairElement("GCG");
 
