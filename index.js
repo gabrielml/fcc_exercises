@@ -49,37 +49,37 @@ console.log("Function rangeOfNumbers: " + rangeOfNumbers(4, 4));
 
 // - Use Destructuring Assignment to Assign to Extract Values from Objects:
 // Consider the following ES5 code:
-const user = { name: 'John Doe', age:34};
+const user = { name: 'John Doe', age: 34 };
 
 const userName = user.name; // name = 'John Doe'
 const userAge = user.age; // age = 34
 
 // Here's an equivalent assignment statement using the ES6 destructuring syntax:
-const {nameUser, ageUser} = user; // (!) nameUser and ageUser => undefined ???
+const { nameUser, ageUser } = user; // (!) nameUser and ageUser => undefined ???
 // TODO: (node:3687) [DEP0016] DeprecationWarning: 'GLOBAL' is deprecated, use 'global'
 
 // - Promise:
 const makeServerRequest = new Promise((resolve, reject) => {
     let responseFromServer = true;
 
-    if(responseFromServer){
+    if (responseFromServer) {
         resolve("We got the data");
-    }else{
+    } else {
         reject("Data not received");
     }
 });
 
-makeServerRequest.then(result =>{
+makeServerRequest.then(result => {
     console.log(result);
 });
 
-makeServerRequest.catch(error =>{
+makeServerRequest.catch(error => {
     console.log(error);
 });
 
 // ## Intermediate Algorithm Scripting.
 // 6/21 Pig Latin:
-function translatePigLatin(str){
+function translatePigLatin(str) {
     // Variables:
     let regEx = /([aeiou])/i; // () matched results are included in the array. Use in split() method.
     let vowelPosition;
@@ -90,9 +90,9 @@ function translatePigLatin(str){
     // Find vowel position:
     vowelPosition = str.search(regEx);
     // Case a: If word not contain vowel = str + "ay":
-    if (vowelPosition === -1){
+    if (vowelPosition === -1) {
         return str.concat(suffixOne);
-    } else if(vowelPosition === 0){
+    } else if (vowelPosition === 0) {
         return str.concat(suffixTwo);
     } else {
         let splitWord = str.split(regEx)
@@ -118,7 +118,7 @@ console.log(translatePigLatin("rhythm"));
 function myReplace(str, before, after) {
     let regEx = /^[A-Z]/;
 
-    if(before.search(regEx) === 0 && after.search(regEx) === -1){
+    if (before.search(regEx) === 0 && after.search(regEx) === -1) {
         after = after.replace(/^\w/, firstLetter => firstLetter.toUpperCase());
     }
     return str.replace(before, after);
