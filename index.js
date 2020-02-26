@@ -173,3 +173,38 @@ function pairElement(str) {
 
 pairElement("GCG");
 
+// #9/21 Missing letters:
+function fearNotLetter(str) {
+    // Variables:
+    let alphabetPattern = "abcdefghijklmnopqrstuvwxyz";
+    let missingLetter;
+    // Identify first & last letter in de "str":
+    let firstLetterStr = str.charAt(0);
+    let lastLetterStr = str.charAt(str.length - 1);
+    let strIndex = 0;
+
+    let alphabetSection = alphabetPattern.slice(alphabetPattern.indexOf(firstLetterStr), alphabetPattern.indexOf(lastLetterStr) + 1);
+
+
+    for (let index = 0; index <= alphabetSection.length; index++) {
+        if (alphabetSection.charAt(index) !== str.charAt(strIndex)) {
+            typeof missingLetter === "undefined" ? missingLetter = alphabetSection.charAt(index) : missingLetter += alphabetSection.charAt(index);
+            // missingLetter = alphabetSection.charAt(index);
+            strIndex--;
+        }
+        strIndex++;
+    }
+
+    return missingLetter;
+}
+
+console.log("1. The missing letter: " + fearNotLetter("jkln"));
+console.log("2. The missing letter: " + fearNotLetter("abce"));
+console.log("3. The missing letter: " + fearNotLetter("abcdefghjklmno"));
+console.log("4. The missing letter: " + fearNotLetter("stvwx"));
+console.log("5. The missing letter: " + fearNotLetter("bcdf"));
+console.log("6. The missing letter: " + fearNotLetter("abcdefghijklmnopqrstuvwxyz"));
+console.log("7. The missing letter: " + fearNotLetter("efij"));
+
+module.exports = fearNotLetter;
+
