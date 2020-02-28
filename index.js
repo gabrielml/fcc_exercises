@@ -12,7 +12,7 @@ function countup(n) {
     }
 }
 
-console.log(countup(5)); // [1, 2, 3, 4, 5]
+//console.log(countup(5)); // [1, 2, 3, 4, 5]
 
 // - Function countdown:
 
@@ -25,7 +25,7 @@ function countdown(n) {
         return countArray;
     }
 }
-console.log("Function Countdown: " + countdown(5)); // [5, 4, 3, 2, 1]
+//console.log("Function Countdown: " + countdown(5)); // [5, 4, 3, 2, 1]
 
 // FIXME: Use Recursion to Create a Range of Numbers:
 
@@ -39,9 +39,9 @@ function rangeOfNumbers(startNum, endNum) {
     }
 };
 
-console.log("Function rangeOfNumbers: " + rangeOfNumbers(1, 5));
-console.log("Function rangeOfNumbers: " + rangeOfNumbers(6, 9));
-console.log("Function rangeOfNumbers: " + rangeOfNumbers(4, 4));
+// console.log("Function rangeOfNumbers: " + rangeOfNumbers(1, 5));
+// console.log("Function rangeOfNumbers: " + rangeOfNumbers(6, 9));
+// console.log("Function rangeOfNumbers: " + rangeOfNumbers(4, 4));
 
 // TODO: Repeat the exercises using: ternary operator, higer order functions like 'splice(0,0,n)', '[].concat(n-1)', '[n, ...function()]'
 
@@ -70,11 +70,11 @@ const makeServerRequest = new Promise((resolve, reject) => {
 });
 
 makeServerRequest.then(result => {
-    console.log(result);
+//    console.log(result);
 });
 
 makeServerRequest.catch(error => {
-    console.log(error);
+//    console.log(error);
 });
 
 // ## Intermediate Algorithm Scripting.
@@ -110,8 +110,8 @@ translatePigLatin("paragraphs");
 translatePigLatin("glove");
 translatePigLatin("algorithm");
 translatePigLatin("eight");
-console.log(translatePigLatin("schwartz"));
-console.log(translatePigLatin("rhythm"));
+//console.log(translatePigLatin("schwartz"));
+//console.log(translatePigLatin("rhythm"));
 
 
 // 7/21 Search and Replace:
@@ -124,15 +124,15 @@ function myReplace(str, before, after) {
     return str.replace(before, after);
 }
 
-console.log("1: " + myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
-console.log("2: " + myReplace("Let us go to the store", "store", "male"));
-console.log("3: " + myReplace("He is Sleeping on the couch", "Sleeping", "sitting"));
-console.log("4: " + myReplace("This has a spellngi error", "spellngi", "spelling"));
-console.log("5: " + myReplace("His name is Tom", "Tom", "john"));
-console.log("6: " + myReplace("Let us get back to more Coding", "Coding", "algorithms"));
+// console.log("1: " + myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+// console.log("2: " + myReplace("Let us go to the store", "store", "male"));
+// console.log("3: " + myReplace("He is Sleeping on the couch", "Sleeping", "sitting"));
+// console.log("4: " + myReplace("This has a spellngi error", "spellngi", "spelling"));
+// console.log("5: " + myReplace("His name is Tom", "Tom", "john"));
+// console.log("6: " + myReplace("Let us get back to more Coding", "Coding", "algorithms"));
 
 // 8/21 DNA Pairing
-console.log("\n *** 8/21 DNA Pairing *** \n");
+//console.log("\n *** 8/21 DNA Pairing *** \n");
 
 function pairElement(str) {
     // Variables:
@@ -159,7 +159,7 @@ function pairElement(str) {
                 pairingStrand.push("A");
                 break;
             default:
-                console.log(`Sorry, there is no pairing element for ${originalStrand[i]}`);
+                //console.log(`Sorry, there is no pairing element for ${originalStrand[i]}`);
                 break;
         }
     }
@@ -198,13 +198,12 @@ function fearNotLetter(str) {
     return missingLetter;
 }
 
-console.log("1. The missing letter: " + fearNotLetter("jkln"));
-console.log("2. The missing letter: " + fearNotLetter("abce"));
-console.log("3. The missing letter: " + fearNotLetter("abcdefghjklmno"));
-console.log("4. The missing letter: " + fearNotLetter("stvwx"));
-console.log("5. The missing letter: " + fearNotLetter("bcdf"));
-console.log("6. The missing letter: " + fearNotLetter("abcdefghijklmnopqrstuvwxyz"));
-console.log("7. The missing letter: " + fearNotLetter("efij"));
+// console.log("1. The missing letter: " + fearNotLetter("jkln"));
+// console.log("2. The missing letter: " + fearNotLetter("abce"));
+// console.log("3. The missing letter: " + fearNotLetter("abcdefghjklmno"));
+// console.log("4. The missing letter: " + fearNotLetter("stvwx"));
+// console.log("5. The missing letter: " + fearNotLetter("bcdf"));
+// console.log("6. The missing letter: " + fearNotLetter("abcdefghijklmnopqrstuvwxyz"));
+// console.log("7. The missing letter: " + fearNotLetter("efij"));
 
 module.exports = fearNotLetter;
-
