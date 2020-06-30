@@ -177,6 +177,7 @@ tags
 .vim
 
 ### VisualStudioCode ###
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -186,5 +187,9 @@ tags
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+
+### sketch_code is a folder to temporaly  save sketches and ideas
+#add by gML
+.sketch_code
 
 # End of https://www.gitignore.io/api/git,vim,node,macos,visualstudiocode
