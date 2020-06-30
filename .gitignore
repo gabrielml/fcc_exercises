@@ -192,4 +192,6 @@ tags
 #add by gML
 .sketch_code
 
+### JSDoc. Ignore "docs" folder, use to documenting JavaScript
+docs/
 # End of https://www.gitignore.io/api/git,vim,node,macos,visualstudiocode

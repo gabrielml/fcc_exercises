@@ -4,7 +4,8 @@
     "description": "Training Exercises using Debug feature",
     "main": "index.js",
     "scripts": {
-        "test": "jest --watch"
+        "test": "jest --watch",
+        "doc": "jsdoc -c jsdoc.json"
     },
     "jest": {
         "collectCoverage": true
@@ -12,7 +13,8 @@
     "author": "Gabriel Mijares <gabrielmljob@gmail.com>",
     "license": "MIT",
     "devDependencies": {
-        "jest": "25.1.0"
+        "jest": "25.1.0",
+        "jsdoc": "3.6.4"
     },
     "dependencies": {
         "@types/jest": "25.1.3"
