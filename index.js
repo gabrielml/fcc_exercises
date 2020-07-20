@@ -1,3 +1,5 @@
+const convertHTML = require('./src/convertHtmlEntities');
+const sumFibs = require('./src/sumAllOddFibonacciNumbers');
 // # JAVASCRIPT ALGORITHMS AND DATA STRUCTURES CERTIFICATIONS (300 hours)
 // ## Basic JavaScript (110 Exercises)
 // - Use Recursion to Create a Countdown
@@ -70,11 +72,11 @@ const makeServerRequest = new Promise((resolve, reject) => {
 });
 
 makeServerRequest.then(result => {
-//    console.log(result);
+    //    console.log(result);
 });
 
 makeServerRequest.catch(error => {
-//    console.log(error);
+    //    console.log(error);
 });
 
 // ## Intermediate Algorithm Scripting.
@@ -205,5 +207,10 @@ function fearNotLetter(str) {
 // console.log("5. The missing letter: " + fearNotLetter("bcdf"));
 // console.log("6. The missing letter: " + fearNotLetter("abcdefghijklmnopqrstuvwxyz"));
 // console.log("7. The missing letter: " + fearNotLetter("efij"));
+
+convertHTML("Dolce & Gabbana");
+
+// Exercise #12/21 Sum All Odd Fibonacci Numbers:
+sumFibs(0);
 
 module.exports = fearNotLetter;
