@@ -1,5 +1,6 @@
 const convertHTML = require('./src/convertHtmlEntities');
 const sumFibs = require('./src/sumAllOddFibonacciNumbers');
+const sumPrimes = require('./src/sumAllPrimes');
 // # JAVASCRIPT ALGORITHMS AND DATA STRUCTURES CERTIFICATIONS (300 hours)
 // ## Basic JavaScript (110 Exercises)
 // - Use Recursion to Create a Countdown
@@ -212,5 +213,8 @@ convertHTML("Dolce & Gabbana");
 
 // Exercise #12/21 Sum All Odd Fibonacci Numbers:
 sumFibs(0);
+
+// Exercise #13/21 Sum All Primes:
+sumPrimes(10);
 
 module.exports = fearNotLetter;
