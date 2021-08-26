@@ -181,7 +181,7 @@ function pairElement(str) {
 pairElement("GCG");
 
 // #9/21 Missing letters:
-console.log("#9/21 Missing letters: " + fearNotLetter("jkln"));
+console.log("Exercise #9/21 Missing letters: " + fearNotLetter("jkln"));
 
 // Exercise #11/21 Convert HTML Entities:
 convertHTML("Dolce & Gabbana");
@@ -193,8 +193,7 @@ sumFibs(0);
 sumPrimes(10);
 
 // Exercise #14/21 Smallest Common Multiple:
-console.log("Smallest Common Multiple: " + smallestCommonsLib.smallestCommons([23, 18]));
-
+console.log("Exercise #14/21 Smallest Common Multiple: " + smallestCommonsLib.smallestCommons([23, 18]));
 
 // Exercise #15/21 Drop it:
 console.log("Exercise #15/21 Drop it: " + dropElements([1, 2, 3], function (n) {
