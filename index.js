@@ -3,6 +3,7 @@ const sumFibs = require('./src/sumAllOddFibonacciNumbers');
 const sumPrimes = require('./src/sumAllPrimes');
 const fearNotLetter = require('./src/missingLetter');
 const smallestCommonsLib = require('./src/smallestCommonMultiple');
+const dropElements = require('./src/dropIt');
 
 // # JAVASCRIPT ALGORITHMS AND DATA STRUCTURES CERTIFICATIONS (300 hours)
 // ## Basic JavaScript (110 Exercises)
@@ -195,6 +196,11 @@ sumPrimes(10);
 console.log("Smallest Common Multiple: " + smallestCommonsLib.smallestCommons([23, 18]));
 
 
+// Exercise #15/21 Drop it:
+console.log("Exercise #15/21 Drop it: " + dropElements([1, 2, 3], function (n) {
+            return n < 3;
+        })
+ );
 
 
 
