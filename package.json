@@ -14,7 +14,7 @@
     "license": "MIT",
     "devDependencies": {
         "jest": "25.1.0",
-        "jsdoc": "3.6.4"
+        "jsdoc": "3.6.7"
     },
     "dependencies": {
         "@types/jest": "25.1.3"
