@@ -4,6 +4,7 @@ const sumPrimes = require('./src/sumAllPrimes');
 const fearNotLetter = require('./src/missingLetter');
 const smallestCommonsLib = require('./src/smallestCommonMultiple');
 const dropElements = require('./src/dropIt');
+const steamrollArray = require('./src/steamroller')
 
 // # JAVASCRIPT ALGORITHMS AND DATA STRUCTURES CERTIFICATIONS (300 hours)
 // ## Basic JavaScript (110 Exercises)
@@ -199,7 +200,12 @@ console.log("Exercise #14/21 Smallest Common Multiple: " + smallestCommonsLib.sm
 console.log("Exercise #15/21 Drop it: " + dropElements([1, 2, 3], function (n) {
             return n < 3;
         })
- );
+);
+
+// Exercise #16/21 Steamroller
+console.log("Exercise #16/21 Steamroller: " + steamrollArray([[["a"]],[["b"]]]));
+
+
 
 
 
