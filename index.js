@@ -4,7 +4,7 @@ const sumPrimes = require('./src/sumAllPrimes');
 const fearNotLetter = require('./src/missingLetter');
 const smallestCommonsLib = require('./src/smallestCommonMultiple');
 const dropElements = require('./src/dropIt');
-const steamrollArray = require('./src/steamroller')
+const steamrollArray = require('./src/steamroller');
 
 // # JAVASCRIPT ALGORITHMS AND DATA STRUCTURES CERTIFICATIONS (300 hours)
 // ## Basic JavaScript (110 Exercises)
