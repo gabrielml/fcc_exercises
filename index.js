@@ -4,7 +4,8 @@ const sumPrimes = require('./src/sumAllPrimes');
 const fearNotLetter = require('./src/missingLetter');
 const smallestCommonsLib = require('./src/smallestCommonMultiple');
 const dropElements = require('./src/dropIt');
-const steamrollArray = require('./src/steamroller')
+const steamrollArray = require('./src/steamroller');
+const binaryAgent = require('./src/binaryAgent');
 
 // # JAVASCRIPT ALGORITHMS AND DATA STRUCTURES CERTIFICATIONS (300 hours)
 // ## Basic JavaScript (110 Exercises)
@@ -205,8 +206,8 @@ console.log("Exercise #15/21 Drop it: " + dropElements([1, 2, 3], function (n) {
 // Exercise #16/21 Steamroller
 console.log("Exercise #16/21 Steamroller: " + steamrollArray([[["a"]],[["b"]]]));
 
-
-
+// Exercise #17/21 Binary Agents:
+console.log(binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"));
 
 
 
