@@ -7,6 +7,7 @@ const dropElements = require('./src/dropIt');
 const steamrollArray = require('./src/steamroller');
 const binaryAgent = require('./src/binaryAgent');
 const addTogether = require('./src/addTogether');
+const orbitalPeriod = require('./src/orbitalPeriod');
 
 // # JAVASCRIPT ALGORITHMS AND DATA STRUCTURES CERTIFICATIONS (300 hours)
 // ## Basic JavaScript (110 Exercises)
@@ -211,6 +212,12 @@ console.log("Exercise #16/21 Steamroller: " + steamrollArray([[["a"]],[["b"]]]))
 console.log(binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"));
 
 // Exercise #19/21 Arguments Optional
-console.log(addTogether([2])(3));
 
-/************************** TEST ZONE *************************************************************/
+
+// Exercise #21/21 Map the Debris - Orbital Period
+console.log("\nExercise #21/21 Map the Debris - Orbital Period: ");
+let orbitalObjects = [];
+orbitalObjects = orbitalPeriod([{name: "iss", avgAlt: 413.6}, {name: "hubble", avgAlt: 556.7}, {name: "moon", avgAlt: 378632.553}]);
+orbitalObjects.forEach(object => {
+    console.log(object);
+});
